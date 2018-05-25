@@ -1,9 +1,22 @@
-.banner{
-    background-color: red;
+.pic {
+    display: inline;
+    z-index: 1;
+    position: absolute;
 }
-.info{
-    background-color: yellow;
+.pic img{
+    padding-left: 30px;
+    padding-top: 60px;
+    display: inline;
+    z-index: 1;
+    height: calc(100vh - 150px);
 }
-.picture{
-    padding-left: 0px;
+.banner {
+    position: relative;
+    z-index: 0;
+    margin-top: 0px;
+    margin-left: 100px;
+    padding-left: 50%;
+    padding-top: 150px;
+    height: calc(100vh - 150px);
+    background-color: aqua;
 }

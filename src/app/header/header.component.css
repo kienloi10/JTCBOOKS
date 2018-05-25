@@ -3,7 +3,7 @@
 }
 .tab button {
     background-color: inherit;
-    float: right;
+    /* float: right; */
     border: none;
     outline: none;
     cursor: pointer;
@@ -15,4 +15,6 @@
 .tab button:hover {
     background-color: #ddd;
 }
-
+.btn {
+    float: right;
+}
