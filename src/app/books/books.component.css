@@ -1,9 +1,8 @@
-.books{
-    
-}
+
 .search {
     display: inline;
     float: right;
+    position: relative;
   }
 .search img{
     padding-top: 40px;
@@ -69,9 +68,11 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     text-align: center;
+    
+    /* background-color: grey; */
   }
   .listBooks button{
-    min-width: 150px;
+    min-width: 160px;
     height: 30px;
     border: none;
     background-color: white;
@@ -79,6 +80,9 @@
     -moz-box-shadow: 3px 3px 3px #666;
     -webkit-box-shadow: 3px 3px 3px #666;
     border-radius: 25px;
+    position: relative ;
+    bottom: 5px;
+    
     
   }
   .listBooks img{

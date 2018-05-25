@@ -13,14 +13,14 @@
   </div>
 
   <div class="search">
-    <input [(ngModel)]="searchBook" name="searchInput" placeholder="What're you looking for?" />
+    <input [(ngModel)]="searchBook" name="searchInput" placeholder="Search?" />
     <img src='assets/search_icon.png'>
   </div>
   <div class="listBooks">
       <div [ngClass]="stage?'gridStage':'listStage'" *ngFor='let book of books'>
-        <img [src]='book.cover'>
+        <img [src]='book.cover' >
         <div class="bookDetails">
-          <p>{{book.title | uppercase}}</p>
+          <p style="font-weight: bold">{{book.title | uppercase}}</p>
           <button> <strong>GET IT NOW</strong> </button>
         </div>
   
