@@ -1,5 +1,6 @@
 .tab {
     overflow: hidden;
+    ;
 }
 .tab button {
     background-color: inherit;
@@ -17,4 +18,30 @@
 }
 .btn {
     float: right;
+}
+.search img{
+    width: 20px;
+    margin: 0px;
+  }
+
+.search {
+    display: inline;
+    float: right;
+    position: relative;
+    background-color:#ffffff;
+  }
+
+.search input {
+    border: none;
+    height: 20px; 
+    font-size: 25px;
+    outline: none;
+    width: 0;
+    transition: 0.5s;
+    display: inline;
+    
+  }
+.search:hover input{
+    width: 300px;  
+    background-color:white;
 }
