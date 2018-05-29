@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BookService } from '../services/book.service';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  searchBook: string;
+  constructor(private _bookService: BookService) { }
 
   ngOnInit() {
   }
-
+  search(kw) {
+    this._bookService.searchBook(kw);
+  }
 }

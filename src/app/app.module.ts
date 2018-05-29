@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { BooksComponent } from './books/books.component';
+import { BookService } from './services/book.service';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import { BooksComponent } from './books/books.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [BookService],  
   bootstrap: [AppComponent]
 })
 export class AppModule { }
